@@ -1,6 +1,7 @@
 ﻿using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.Mapping.ByCode;
+using SimpleNews.Models;
 using System.Web;
 
 namespace SimpleNews
@@ -22,7 +23,7 @@ namespace SimpleNews
             config.Configure();
 
             var mapper = new ModelMapper();
-            //mapper.AddMapping<UserMap>();
+            mapper.AddMapping<UserMap>();
 
             config.AddMapping(mapper.CompileMappingForAllExplicitlyAddedEntities());
 
