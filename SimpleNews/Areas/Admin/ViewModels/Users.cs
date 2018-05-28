@@ -9,7 +9,7 @@ namespace SimpleNews.Areas.Admin.ViewModels
         public IEnumerable<User> Users { get; set; }
     }
 
-    public class UserNew
+    public class UsersNew
     {
         [Required, MaxLength(128)]
         public string UserName { get; set; }
