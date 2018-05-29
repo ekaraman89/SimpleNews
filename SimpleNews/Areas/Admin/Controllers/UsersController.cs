@@ -1,12 +1,13 @@
 ﻿using Newtonsoft.Json;
 using SimpleNews.Areas.Admin.ViewModels;
+using SimpleNews.Infrastructure;
 using SimpleNews.Models;
-using System;
 using System.Linq;
 using System.Web.Mvc;
 
 namespace SimpleNews.Areas.Admin.Controllers
 {
+    [SelectedTab("Users")]
     public class UsersController : Controller
     {
 
