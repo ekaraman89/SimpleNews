@@ -1,9 +1,7 @@
 ﻿using SimpleNews.Models;
-using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Web;
 
 namespace SimpleNews.Areas.Admin.ViewModels
 {
@@ -20,7 +18,7 @@ namespace SimpleNews.Areas.Admin.ViewModels
         [Required, MaxLength(128)]
         public string Summary { get; set; }
 
-        [Required, MaxLength(128)]
+        [Required]
         public string Body { get; set; }
 
         [Required, MaxLength(128)]
