@@ -29,7 +29,7 @@ namespace SimpleNews.Migrations
                 .WithColumn("ID").AsInt32().Identity().PrimaryKey()
                 .WithColumn("Title").AsString(128)
                 .WithColumn("Summary").AsString(128)
-                .WithColumn("Body").AsString(128)
+                .WithColumn("Body").AsString(int.MaxValue)
                 .WithColumn("SeoLink").AsString(128)
                 .WithColumn("CategoryID").AsInt32().ForeignKey("Category","ID");
         }

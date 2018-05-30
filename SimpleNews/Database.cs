@@ -25,6 +25,7 @@ namespace SimpleNews
             var mapper = new ModelMapper();
             mapper.AddMapping<UserMap>();
             mapper.AddMapping<CategoryMap>();
+            mapper.AddMapping<NewsMap>();
 
             config.AddMapping(mapper.CompileMappingForAllExplicitlyAddedEntities());
 
