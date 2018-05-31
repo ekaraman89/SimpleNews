@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>The News Reporter</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @Styles.Render("~/style")
+</head>
+<body>
+    <div class="body_wrapper">
+        <div class="center">
+            <div class="header_area">
+                <div class="logo floatleft"><a href="/"></a></div>
+                <div class="top_menu floatleft">
+                    <ul>
+                        <li><a href="@Url.RouteUrl("Home")">Home</a></li>
+                        <li><a href="@Url.RouteUrl("login")">Login</a></li>
+                    </ul>
+                </div>
+                <div class="social_plus_search floatright">
+                    <div class="social">
+                        <ul>
+                            <li><a href="#" class="twitter"></a></li>
+                            <li><a href="#" class="facebook"></a></li>
+                            <li><a href="#" class="feed"></a></li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <form action="#" method="post" id="search_form">
+                            <input type="text" value="Search news" id="s" />
+                            <input type="submit" id="searchform" value="search" />
+                            <input type="hidden" value="post" name="post_type" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            @{Html.RenderAction("GetCategories", "Default");}
+
+            @RenderBody()
+
+            <div class="footer_bottom_area">
+                <div class="copyright_text">
+                    <p>Copyright &copy; 2018 The News Inc. All rights reserved </p>
+                    <p>Trakya Üniversitesi Web Tabanlı Programlama Dersi Projesi</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    @Scripts.Render("~/scripts");
+    <script type="text/javascript">
+        selectnav('nav', {
+            label: '-Navigation-',
+            nested: true,
+            indent: '-'
+        });
+        selectnav('f_menu', {
+            label: '-Navigation-',
+            nested: true,
+            indent: '-'
+        });
+        $('.bxslider').bxSlider({
+            mode: 'fade',
+            captions: true
+        });
+    </script>
+</body>
+</html>

@@ -239,6 +239,25 @@
     <Content Include="Areas\Admin\Content\assets\pages\scripts\form-input-mask.js" />
     <Content Include="Areas\Admin\Content\assets\pages\scripts\profile.min.js" />
     <Content Include="Areas\Admin\Content\assets\pages\scripts\table-datatables-buttons.js" />
+    <Content Include="Content\assets\css\bootstrap.min.css" />
+    <Content Include="Content\assets\css\images\body_bg.png" />
+    <Content Include="Content\assets\css\images\bx_loader.gif" />
+    <Content Include="Content\assets\css\images\controls.png" />
+    <Content Include="Content\assets\css\images\plus.png" />
+    <Content Include="Content\assets\css\images\search.png" />
+    <Content Include="Content\assets\css\images\site_bg.png" />
+    <Content Include="Content\assets\css\images\social_icons.png" />
+    <Content Include="Content\assets\css\jquery.bxslider.css" />
+    <Content Include="Content\assets\css\responsive.css" />
+    <Content Include="Content\assets\css\style.css" />
+    <Content Include="Content\assets\font\font-awesome.min.css" />
+    <Content Include="Content\assets\font\font.css" />
+    <Content Include="Content\assets\font\fonts\bebas___-webfont.svg" />
+    <Content Include="Content\assets\font\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\assets\js\bootstrap.min.js" />
+    <Content Include="Content\assets\js\jquery-min.js" />
+    <Content Include="Content\assets\js\jquery.bxslider.js" />
+    <Content Include="Content\assets\js\selectnav.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Uploads\News\no_image.png" />
     <Content Include="Uploads\no_image.png" />
@@ -293,12 +312,25 @@
     <Content Include="Areas\Admin\Views\Categories\New.cshtml" />
     <Content Include="Areas\Admin\Views\News\Index.cshtml" />
     <Content Include="Areas\Admin\Views\News\New.cshtml" />
+    <Content Include="Content\assets\font\fonts\bebas___-webfont.eot" />
+    <Content Include="Content\assets\font\fonts\bebas___-webfont.ttf" />
+    <Content Include="Content\assets\font\fonts\bebas___-webfont.woff" />
+    <Content Include="Content\assets\font\fonts\BEBAS___.ttf" />
+    <Content Include="Content\assets\font\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\assets\font\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\assets\font\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\assets\font\fonts\FontAwesome.otf" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
     <Content Include="Tools\DeployDB-Dev.bat" />
     <Content Include="Views\Auth\Index.cshtml" />
     <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Default\GetCategories.cshtml" />
+    <Content Include="Views\Default\ShowNews.cshtml" />
+    <Content Include="Views\Default\CategoryOfNews.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

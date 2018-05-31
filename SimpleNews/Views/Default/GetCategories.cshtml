@@ -1,0 +1,17 @@
+﻿@model SimpleNews.Areas.Admin.ViewModels.CategoriesIndex
+
+@{
+    Layout = null;
+}
+
+<div class="main_menu_area">
+
+    <ul id="nav">
+
+        @foreach (var item in Model.Categories)
+        {
+            <li>@Html.RouteLink(item.CategoryName, "CategoryOfNews", new { CategoryName = item.CategoryName })</li>
+        }
+    </ul>
+</div>
+

@@ -47,7 +47,6 @@ namespace SimpleNews
             #endregion
 
 
-
             bundles.Add(new StyleBundle("~/admin/datatable-style")
                 .Include("~/Areas/Admin/Content/assets/global/plugins/datatables/datatables.min.css")
                 .Include("~/Areas/Admin/Content/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.css")
@@ -59,6 +58,27 @@ namespace SimpleNews
                 .Include("~/Areas/Admin/Content/assets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js")
                 .Include("~/Areas/Admin/Content/assets/pages/scripts/table-datatables-buttons.js")
                 );
+
+
+
+
+            #region Site
+            bundles.Add(new StyleBundle("~/style")
+                .Include("~/Content/assets/font/font-awesome.min.css")
+                .Include("~/Content/assets/font/font.css")
+                .Include("~/Content/assets/css/bootstrap.min.css")
+                .Include("~/Content/assets/css/style.css")
+                .Include("~/Content/assets/css/responsive.css")
+                .Include("~/Content/assets/css/jquery.bxslider.css")
+                );
+
+            bundles.Add(new ScriptBundle("~/scripts")
+                .Include("~/Content/assets/js/jquery-min.js")
+                .Include("~/Content/assets/js/bootstrap.min.js")
+                .Include("~/Content/assets/js/jquery.bxslider.js")
+                .Include("~/Content/assets/js/selectnav.min.js")
+                );
+            #endregion
 
         }
     }

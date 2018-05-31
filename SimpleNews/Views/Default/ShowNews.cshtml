@@ -1,0 +1,12 @@
+﻿@model SimpleNews.Areas.Admin.ViewModels.NewsNew
+@{
+    ViewBag.Title = "ShowNews";
+}
+
+<h1>@Model.Title</h1>
+<hr />
+
+<img src=" ~/uploads/@SimpleNews.Helpers.FileUpload.UploadFolder.News/@Model.CoverPhoto" alt="@Model.Title" title="@Model.Title" />
+
+<hr />
+@Html.Raw(Model.Body)
