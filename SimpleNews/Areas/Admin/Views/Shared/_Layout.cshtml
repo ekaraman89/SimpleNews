@@ -73,18 +73,12 @@
                         <li class="dropdown dropdown-user">
                             <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                                 <img alt="" class="img-circle" src="adasd" />
-                                <span class="username username-hide-on-mobile"> _kullanici.Adi _kullanici.Soyadi </span>
+                                <span class="username username-hide-on-mobile"> Hoşgeldin @User.Identity.Name </span>
                                 <i class="fa fa-angle-down"></i>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-default">
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-user"></i> Profilim
-                                    </a>
-                                </li>
-                                <li class="divider"> </li>
-                                <li>
-                                    <a href="#">
+                                    <a href="@Url.RouteUrl("Logout")">
                                         <i class="icon-key"></i> Log Out
                                     </a>
                                 </li>

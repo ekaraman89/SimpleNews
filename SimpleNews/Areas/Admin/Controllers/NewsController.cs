@@ -3,8 +3,6 @@ using SimpleNews.Areas.Admin.ViewModels;
 using SimpleNews.Helpers;
 using SimpleNews.Infrastructure;
 using SimpleNews.Models;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -12,6 +10,7 @@ using System.Web.Mvc;
 namespace SimpleNews.Areas.Admin.Controllers
 {
     [SelectedTab("News")]
+    [Authorize]
     public class NewsController : Controller
     {
         public ActionResult Index()

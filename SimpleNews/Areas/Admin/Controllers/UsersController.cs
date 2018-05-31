@@ -8,6 +8,7 @@ using System.Web.Mvc;
 namespace SimpleNews.Areas.Admin.Controllers
 {
     [SelectedTab("Users")]
+    [Authorize]
     public class UsersController : Controller
     {
 

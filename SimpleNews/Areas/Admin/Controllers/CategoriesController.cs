@@ -8,6 +8,7 @@ using System.Web.Mvc;
 namespace SimpleNews.Areas.Admin.Controllers
 {
     [SelectedTab("Category")]
+    [Authorize]
     public class CategoriesController : Controller
     {
         public ActionResult Index()
