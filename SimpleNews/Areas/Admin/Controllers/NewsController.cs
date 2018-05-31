@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using SimpleNews.Areas.Admin.ViewModels;
+using SimpleNews.Helpers;
 using SimpleNews.Infrastructure;
 using SimpleNews.Models;
 using System;
@@ -41,7 +42,7 @@ namespace SimpleNews.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateInput(false)]
-        public ActionResult New(NewsNew newsNew, int? ID)
+        public ActionResult New(NewsNew newsNew, HttpPostedFileBase image, int? ID)
         {
             if (Database.Session.Query<News>().Any(x => (x.SeoLink.Equals(newsNew.SeoLink)) && (x.ID != ID)))
                 ModelState.AddModelError("", "SeoLink adı kullanılıyor");
@@ -55,7 +56,8 @@ namespace SimpleNews.Areas.Admin.Controllers
                 Body = newsNew.Body,
                 Summary = newsNew.Summary,
                 SeoLink = newsNew.SeoLink,
-                CategoryID = newsNew.CategoryID
+                CategoryID = newsNew.CategoryID,
+                CoverPhoto = FileUpload.FileName(image, FileUpload.UploadFolder.News)
             };
 
             if (ID == null)

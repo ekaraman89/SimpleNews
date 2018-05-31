@@ -31,6 +31,7 @@ namespace SimpleNews.Migrations
                 .WithColumn("Summary").AsString(128)
                 .WithColumn("Body").AsString(int.MaxValue)
                 .WithColumn("SeoLink").AsString(128)
+                .WithColumn("CoverPhoto").AsString(128)
                 .WithColumn("CategoryID").AsInt32().ForeignKey("Category","ID");
         }
     }

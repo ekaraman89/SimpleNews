@@ -24,6 +24,8 @@ namespace SimpleNews.Areas.Admin.ViewModels
         [Required, MaxLength(128)]
         public string SeoLink { get; set; }
 
+        public string CoverPhoto { get; set; }
+
         [Required]
         public int CategoryID { get; set; }
 

@@ -1,9 +1,5 @@
 ﻿using NHibernate.Mapping.ByCode;
 using NHibernate.Mapping.ByCode.Conformist;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace SimpleNews.Models
 {
@@ -14,6 +10,7 @@ namespace SimpleNews.Models
         public virtual string Summary { get; set; }
         public virtual string Body { get; set; }
         public virtual string SeoLink { get; set; }
+        public virtual string CoverPhoto { get; set; }
         public virtual int CategoryID { get; set; }
 
         public virtual Category Category { get { return Database.Session.Get<Category>(CategoryID); } set { } }
@@ -34,6 +31,7 @@ namespace SimpleNews.Models
             Property(x => x.Summary, x => x.NotNullable(true));
             Property(x => x.Body, x => x.NotNullable(true));
             Property(x => x.SeoLink, x => x.NotNullable(true));
+            Property(x => x.CoverPhoto, x => x.NotNullable(true));
             Property(x => x.CategoryID, x => x.NotNullable(true));
         }
     }
