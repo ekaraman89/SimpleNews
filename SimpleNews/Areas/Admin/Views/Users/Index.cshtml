@@ -70,7 +70,7 @@
             if (confirm("Kullanici Silinsin mi ?")) {
                 $.ajax({
                     type: "POST",
-                    url: "/Users/Delete",
+                    url: "/Admin/Users/Delete",
                     data: { ID: id },
                     success: function (data) {
                         var result = JSON.parse(data);

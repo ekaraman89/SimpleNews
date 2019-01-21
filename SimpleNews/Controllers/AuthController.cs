@@ -30,7 +30,7 @@ namespace SimpleNews.Controllers
 
                 if (!string.IsNullOrWhiteSpace(ReturnUrl))
                     return Redirect(ReturnUrl);
-                return RedirectToRoute("Home");
+                return Redirect("/Admin/News");
             }
 
             return View();

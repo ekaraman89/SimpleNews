@@ -82,7 +82,7 @@
             if (confirm("Haber Silinsin mi ?")) {
                 $.ajax({
                     type: "POST",
-                    url: "/News/Delete",
+                    url: "/Admin/News/Delete",
                     data: { ID: id },
                     success: function (data) {
                         var result = JSON.parse(data);

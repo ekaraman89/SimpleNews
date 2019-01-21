@@ -70,7 +70,7 @@
             if (confirm("Kategori Silinsin mi ?")) {
                 $.ajax({
                     type: "POST",
-                    url: "/Categories/Delete",
+                    url: "/Admin/Categories/Delete",
                     data: { ID: id },
                     success: function (data) {
                         var result = JSON.parse(data);
